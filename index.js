@@ -3,11 +3,14 @@ const receivesAFunction=(callback)=>{
 }
 
 var hook=0;function returnsANamedFunction (){
-    return ++hook;
+    ++hook;
+    return returnsANamedFunction
 }
 console.log(hook());
 
-var hoo=0;function returnsAnAnonymousFunction (){
-    return ++hoo;
+function returnsAnAnonymousFunction (){
+   const hoo=' ';
+  
+   return returnsAnAnonymousFunction
 }
 console.log(hoo());
